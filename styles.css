@@ -464,7 +464,7 @@ button:hover {
   
   .footer {
     flex: 1;
-    background-color: #transparent; /* Cor de fundo dos boxes */
+    background-color: transparent; /* Cor de fundo dos boxes */
     margin: 0; /* Espaço entre os boxes */
     color: #fff;
     text-align: left;
