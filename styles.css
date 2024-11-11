@@ -54,6 +54,16 @@ header {
   color: #ff6900;
 }
 
+.whatsapp-link {
+  border: 3px solid #ff6900; /* Borda laranja de 3px */
+  border-radius: 5px; /* Arredondamento opcional */
+}
+
+/* Cor de fundo ao passar o mouse no link "WhatsApp" */
+.whatsapp-link:hover {
+  color: #fff;
+}
+
   
 /* HERO SECTION */
 
@@ -397,37 +407,43 @@ button:hover {
 
 .clientsection {
   width: 100%;
-  min-width: 350px;
+  height: 300px;
+  overflow: hidden;
+  background-color: #ffffff; /* Fundo branco para contraste */
   display: flex;
   justify-content: center;
-  background-color: #ffffff; /* Cor de fundo para destaque */
-  white-space: nowrap;
-
+  align-items: center;
 }
 
-.slider{
-  width: 1000px;
+.insideslider {
+  width: 100%;
+  max-width: 1200px; /* Limita a largura máxima a 1200px */
+  display: flex;
   overflow: hidden;
-  display: inline-block;
-  padding: 60px 0; /* Espaço vertical da section */
-  animation: 5s slide infinite linear;
-
 }
 
-@keyframes slide {
-  from {
+.slider {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+.slider img {
+  height: 50px;
+  margin: 0 20px; /* Espaçamento entre logos */
+  object-fit: contain;
+}
+
+/* Animação para rolar os logos */
+@keyframes scroll {
+  0% {
     transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
-  
 }
 
-.slider img{
-  height: 50px;
-  margin: 0 40px;
-}
+
 
   /* FOOTER */
 .footersection {
